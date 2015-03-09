@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Socket.IO Multiplayer Game</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <ul class="pages">
+      <li class="join page">
+         <br><br>
+         <span class="join-button button">Play a game</span>
+      </li>
+      <li class="searching page">
+         <br>
+         <h3>Searching for a game...</h3>
+      </li>
+      <li class="end page">
+         <br>
+         <p>A user disconnected. Refresh the page to play again.</p>
+      </li>
+      <li class="flip page">
+         <div class="tiles">
+         </div>
+         <div class="overlay">
+         </div>
+         <span class="countdown">
+         </span>
+         <p class="help">
+            You are player %p. You are trying to convert all of the squares to %c2. They are trying to convert all of the squares to %c. Use your arrow keys (left, right, up, down) to move your player. Every time you leave a block, it will "flip" the color.<br>(You cannot "win" yet.)
+         </p>
+      </li>
+   </ul>
+
+   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+   <script src="/socket.io/socket.io.js"></script>
+   <script src="game-logic.js"></script>
+   <script src="main.js"></script>
+</body>
+</html>

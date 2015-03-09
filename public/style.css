@@ -1,0 +1,128 @@
+/* Fix user-agent */
+
+* {
+   box-sizing: border-box;
+}
+
+html {
+   font-weight: 300;
+   -webkit-font-smoothing: antialiased;
+}
+
+html, input {
+   font-family:
+   "HelveticaNeue-Light",
+   "Helvetica Neue Light",
+   "Helvetica Neue",
+   Helvetica,
+   Arial,
+   "Lucida Grande",
+   sans-serif;
+}
+
+html, body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+ul {
+   list-style: none;
+   word-wrap: break-word;
+}
+
+/* Pages */
+
+.pages {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+}
+
+.page {
+   display: none;
+   height: 100%;
+   position: absolute;
+   width: 100%;
+   text-align: center;
+}
+
+.tiles, .overlay {
+   margin-top: 20px;
+   width: 468.75px;
+   height: 500px;
+   margin-left: calc(50% - 234.375px);
+   border: 1px solid black;
+   position: absolute;
+}
+
+.overlay {
+   display: none;
+
+   background-color: black;
+   opacity: .07;
+}
+
+.overlay.shown {
+   display: block;
+}
+
+.tiles .cell.black {
+   background-color: black;
+   border: 1px solid white;
+}
+
+.tiles .cell.white {
+   background-color: white;
+   border: 1px solid black;
+}
+.tiles .cell {
+   display: inline-block;
+   height: 100%;
+}
+
+#player {
+   background-color: green;
+   width: 100%;
+   height: 100%;
+}
+
+#other-player {
+   background-color: red;
+   width: 100%;
+   height: 100%;
+}
+
+
+.button {
+   cursor: pointer;
+   border: 3px solid black;
+   border-radius: .6em;
+   padding: .6em;
+
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+
+   background-color: white;
+}
+
+.button:hover {
+   background-color: #ddd;
+}
+
+.button:active {
+   background-color: #aaa;
+}
+
+.countdown {
+   position: absolute;
+}
+
+.help {
+   padding-top: 530px;
+}
